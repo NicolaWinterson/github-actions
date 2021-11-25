@@ -29,6 +29,6 @@ jobs:
 
       - name: Run linters
         uses: wearerequired/lint-action@v1
-        run: run pylint "app"
+        run: pipenv run pylint "app.*"
         with:
           pylint: true
